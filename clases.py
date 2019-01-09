@@ -21,6 +21,15 @@ class alumno:
         self.legajo = legajo
         self.especialidad = especialidad
         self.años_cursando = años_cursando
+    def diccionario(self):
+        return {
+            'nombre': [self.nombre],
+            'apellido': [self.apellido],
+            'edad': [self.edad],
+            'legajo': [self.legajo],
+            'especialidad': [self.especialidad],
+            'tiempo cursando': [self.años_cursando]
+        }
 
 class aprobadas:
     def __init__(self, obj_materia, obj_profesor, nota_final, nota_primer_parcial, nota_segundo_parcial):

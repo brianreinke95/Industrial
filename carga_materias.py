@@ -24,7 +24,7 @@ for i in range(len(materias)):
 ### parciales y finales los cuales tendrán referencias a las materias, al año y al profesor en cuestión.
 ### Debe haber una sección con gráficas y estadísticas sobre el progreso del estudiante.
 
-### Carga de datos personales.
+
 
 ### Carga de datos de materias.
 

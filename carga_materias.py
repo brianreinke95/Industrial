@@ -29,7 +29,6 @@ for i in range(len(materias)):
 ### Carga de datos de materias.
 
 
-
 '''
 for i in range(len(lista_obj_materias)):
     print(lista_obj_materias[i].nombre)'''

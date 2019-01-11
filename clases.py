@@ -12,7 +12,6 @@ class materia:
         cadena = str(self.nivel) + ' ' + self.nombre + ': ' +  self.modo_cursada
         return cadena
 
-
 class alumno:
     def __init__(self, nombre, apellido, edad, legajo, especialidad, años_cursando):
         self.nombre = nombre

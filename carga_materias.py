@@ -16,6 +16,11 @@ for i in range(len(materias)):
     lista_obj_materias.append(materia(materias[i], codigo[i], nivel[i], modo_cursada[i],
                                       carga_horaria_semanal[i], carga_horaria_total[i]))
 
+
+
+
+
+
 ### Necesito que la gente se registre con un usuario y contraseña que le permita acceso a sus datos.
 ### Debo configurar permisos.
 ### Un menú donde las opciones sean cargar datos personales, cargar y modificar datos de las materias.

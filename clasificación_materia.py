@@ -7,13 +7,24 @@ list_obj_por_cursar = []
 condición = input('En este menpu se procederá a cargar el estado de las materias. ¿Quiere continuar? y->si n->no ')
 
 if condición == 'y':
-        i=0
+        i = 0
         for materia in lista_obj_materias:
-            print(str(i)+': '+ materia.nombre)
+            print(str(i)+': ' + materia.nombre)
             i += 1
         index = int(input('\n\n' + 'Seleccionar la materia (mediante su index) para cargar sus datos: '))
         print(lista_obj_materias[index])
-        # Debo crear 3 opciones de carga para cada caso (a/f/c)
+
+        # Debo crear un loop que solo se salga si el usuario no quiere seguir cargando datos.
+        # Debo visibilizar los datos que ya fueron cargados y si el usuario quiere modificar alguna materia
+        # donde ya hay datos cargados mostrarlos y preguntarle si realmente quiere modificar los datos de la
+        # misma.
+        # Los objetos creados en este script deben ser guardados en un csv. Debo levantar los datos, crear un
+        # dataframe, y analizar si ya existe algún objeto con el nombre de la materia seleccionada.
+        # De existir, mensaje y opción. De no existir se le mostrará al usuario el nombre de la materia y
+        # la no existencia de datos, y darle la opción de cargar datos en él o salir.
+
+        # ¿Se podrá crear una ventana con el mensaje? Utilizar PyQt
+
         estado = input(lista_obj_materias[index].nombre + ', la tienes:\naprobada -> a\nfinal pendiente -> f\n'
                                                           'sin cursar->c\nRespuesta: ')
         if estado == 'a':
@@ -40,6 +51,8 @@ if condición == 'y':
             )
         else:
             print('no ha seleccionado un item válido')
+
+
 elif condición == 'n':
     print('aa')
 else:

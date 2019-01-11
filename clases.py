@@ -8,9 +8,7 @@ class materia:
         self.modo_cursada = modo_cursada
         self.carga_horaria_semanal = carga_horaria_semanal
         self.carga_horaria_total = carga_horaria_total
-    def __str__(self):
-        cadena = str(self.nivel) + ' ' + self.nombre + ': ' +  self.modo_cursada
-        return cadena
+    
 
 class alumno:
     def __init__(self, nombre, apellido, edad, legajo, especialidad, años_cursando):

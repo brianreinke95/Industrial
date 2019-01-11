@@ -1,7 +1,6 @@
 import pandas as pd
 import re
 from functools import reduce
-import numpy as np
 
 desired_width = 1000
 pd.set_option("display.max_columns", 12)
@@ -61,7 +60,6 @@ df.loc[df['Cuatrimestral/Anual'] == 'Cuatrimestral / Anual'] = aux  # Modifico e
 df = df.drop_duplicates()
 
 
-#print(df)
-#print(carga_horaria_por_año)
+## Datos sustraido: df, carga_horaria_por_año
 
 

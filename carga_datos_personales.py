@@ -19,7 +19,7 @@ df = pd.DataFrame(alumno1.diccionario())
 if os.path.isfile('alumnos.csv'):
     df.to_csv('alumnos.csv', index=False, sep=';', mode='a', header=False)
 else:
-    df.to_csv('alumnos.csv', index=False)
+    df.to_csv('alumnos.csv', index=False, sep=';')
 
 
 
